@@ -45,5 +45,24 @@ class Persona {
     };
 };
 
+class Heroe extends Persona {
 
-const spiderman = new Persona( 'Peter', 'Spiderman', 'Soy tu amigable vecino');
+    clan = 'sin clan';
+
+    constructor(nombre, codigo, frase){
+        super(nombre, codigo, frase);
+
+        this.clan = 'Los power Rangers';
+    }
+
+    miFrase(){
+        console.log(`${this.nombre} dice que su frase es la siguiente: ${this.frase}`);
+        super.miFrase();
+    };
+};
+
+
+const spiderman = new Heroe( 'Peter', 'Spiderman', 'Soy tu amigable vecino');
+// const spiderman = new Heroe();
+spiderman.miFrase();
+console.log(spiderman);
