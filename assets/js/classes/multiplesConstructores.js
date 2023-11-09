@@ -28,7 +28,16 @@ const mateito = {
 };
 
 
+const matias = {
+    nombre : 'Matias',
+    apellido : 'Solano',
+    pais : 'Colombia'
+};
+
+
 const persona1 = new Persona( nombre1, apellido1, pais1);
 const persona2 = Persona.porObjeto(mateito);
+const persona3 = Persona.porObjeto(matias);
 
 persona2.getInfo();
+persona3.getInfo();
